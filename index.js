@@ -101,7 +101,7 @@ app.get('/health', (req, res) => {
 
 // Info GET endpoint
 app.get('/info', ensureAuth, (req, res, next) => {
-  res.send('This is a proxy service which proxies to Billing and Account APIs.');
+  res.send('This is a proxy service which proxies to Kubernetes Dashboard');
 });
 
 // Proxy endpoints
