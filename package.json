@@ -10,7 +10,15 @@
     "start": "node app.js",
     "lint": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix",
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "build": "echo 'Building Docker Image'",
+    "predocker:build": "cross-conf-env echo building docker image: $npm_package_config_imageRepo:$npm_package_version",
+    "docker:build": "cross-conf-env docker image build . --no-cache -t $npm_package_config_imageRepo:$npm_package_version",
+    "postdocker:build": "npm run docker:tag",
+    "docker:tag": " cross-conf-env docker image tag $npm_package_config_imageRepo:$npm_package_version $npm_package_config_imageRepo:latest",
+    "predocker:publish": "echo Attention! Ensure `docker login` is correct.",
+    "docker:publish": "cross-conf-env docker image push $npm_package_config_imageRepo:$npm_package_version",
+    "postdocker:publish": "cross-conf-env docker image push $npm_package_config_imageRepo:latest"
   },
   "keywords": [],
   "author": "",
@@ -47,7 +55,8 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
+    },
+    "imageRepo": "suveshbaskar/kubernetes-dashboard-proxy"
   },
   "husky": {
     "hooks": {
