@@ -1,0 +1,23 @@
+{
+  "name": "kubernetes-dashboard-proxy",
+  "version": "1.0.0",
+  "description": "A Nodejs Proxy for Kubernetes Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "googleapis": "^61.0.0",
+    "http-proxy-middleware": "^1.0.6",
+    "lodash": "^4.17.20",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}

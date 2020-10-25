@@ -1,0 +1,16 @@
+### API DESIGN DOCUMENT
+PROXY
+/ => KUBERNETES DASHBOARD => ONLY AUTH ACCESS
+
+IF NOT AUTHENTICATED 
+/ => /login => GOOGLE AUTH => /
+
+PROTECTED ROUTES
+/
+/logout
+
+NOT PROTECTED ROUTES
+GET /login        - REDIRECT TO GOOGLE LOGIN
+GET /ping         - RETURNS PONG - application/txt
+GET /health       - RETURNS JSON {status: "OPERATIONAL", message:"SERVER OK"}
+GET /auth/google  - GOOGLE OAUTH CALLBACK
