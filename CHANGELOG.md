@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/compare/v1.0.3...v1.0.4) (2020-10-25)
+
+
+### CI
+
+* github action changes ([8a5d0e5](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/commit/8a5d0e517985597bcac009e42fc4c69e8bcad00a))
+* github actions ([72d3bdc](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/commit/72d3bdcd3a6a0e3d2cf7389bdb862afdf704b4ee))
+* github actions changes ([8d87a06](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/commit/8d87a0618be53aef171c6129209f8906a668302b))
+* github actions yaml ([c6a397b](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/commit/c6a397b46f1a5012bfa13eabedc774b3daa4aaca))
+
 ### [1.0.3](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/compare/v1.0.2...v1.0.3) (2020-10-25)
 
 
