@@ -1,7 +1,7 @@
 name: Publish to Docker
 on: [push]
 jobs:
-  check-bats-version:
+  push-to-docker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
