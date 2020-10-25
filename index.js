@@ -10,7 +10,7 @@ require('dotenv').config();
 // Passport Config
 require('./config/passport')(passport);
 
-const { ensureAuth, ensureNonAuth, checkHeader } = require('./middleware/auth');
+const { ensureAuth, ensureNonAuth } = require('./middleware/auth');
 const { ensureEmail } = require('./middleware/email');
 
 // Create Express Server
@@ -22,16 +22,16 @@ const API_SERVICE_URL = process.env.PROXY_BACKEND_URL;
 
 // Logging Middleware
 // app.use(morgan('dev'));
-morgan.token('user', function (req, res) {
+morgan.token('user', (req) => {
   if (req.user && req.user.email) {
     return `${req.user.level} ${req.user.email}`;
   }
   return '-';
 });
 app.use(
-  morgan(function (tokens, req, res) {
+  morgan((tokens, req, res) => {
     return [
-      "[PROX]",
+      '[PROX]',
       tokens.method(req, res),
       '[',
       tokens.user(req, res),
@@ -96,11 +96,11 @@ app.get('/ping', (req, res) => {
 
 // Health Endpoint
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: `OPERATIONAL`, message: 'SERVER OK' });
+  res.status(200).json({ status: 'OPERATIONAL', message: 'SERVER OK' });
 });
 
 // Info GET endpoint
-app.get('/info', ensureAuth, (req, res, next) => {
+app.get('/info', ensureAuth, (req, res) => {
   res.send('This is a proxy service which proxies to Kubernetes Dashboard');
 });
 

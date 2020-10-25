@@ -1,5 +1,4 @@
 const _ = require('lodash');
-const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 module.exports = (passport) => {
@@ -16,11 +15,11 @@ module.exports = (passport) => {
       },
     ),
   );
-  passport.serializeUser(function (user, done) {
+  passport.serializeUser((user, done) => {
     done(null, user);
   });
 
-  passport.deserializeUser(function (user, done) {
+  passport.deserializeUser((user, done) => {
     done(null, user);
   });
 };
