@@ -2,9 +2,13 @@
   "name": "kubernetes-dashboard-proxy",
   "version": "1.0.0",
   "description": "A Nodejs Proxy for Kubernetes Dashboard",
+  "repository": {
+    "url": "https://github.com/SuveshBaskar/kubernetes-dashboard-proxy.git"
+  },
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +23,15 @@
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
