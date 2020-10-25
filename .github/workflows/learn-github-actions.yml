@@ -1,5 +1,8 @@
 name: Publish to Docker
-on: [push]
+on: 
+  release:
+    types: # This configuration does not affect the page_build event above
+      - created
 jobs:
   push-to-docker:
     runs-on: ubuntu-latest
@@ -7,6 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - uses: docker-practice/actions-setup-docker@master
+      - name: Docker Login
       - run: docker login -u ${{ secrets.ADONIS_DOCKER_USER }} -p ${{ secrets.ADONIS_DOCKER_KEY }}
       - run: npm ci
       - run: npm run docker:build

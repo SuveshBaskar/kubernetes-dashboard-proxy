@@ -1,26 +1,28 @@
 {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es2020": true
-    },
-    "extends": [
-        "airbnb-base"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 11
-    },
-    "rules": {
-      "no-console": "off",
-      "consistent-return": "off",
-      "no-restricted-syntax": "off",
-      "no-param-reassign": "off",
-      "arrow-body-style": ["error", "always"],
-      "no-else-return": "off",
-      "no-underscore-dangle": "off",
-      "no-async-promise-executor": "off",
-      "no-await-in-loop": "off",
-      "max-len": ["error", { "code": 120 }],
-      "prefer-promise-reject-errors": "off"
-    }
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2020": true
+  },
+  "extends": ["airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+    "no-console": "off",
+    "consistent-return": "off",
+    "no-restricted-syntax": "off",
+    "no-param-reassign": "off",
+    "arrow-body-style": ["error", "always"],
+    "no-else-return": "off",
+    "no-underscore-dangle": "off",
+    "no-async-promise-executor": "off",
+    "no-await-in-loop": "off",
+    "max-len": ["error", { "code": 120 }],
+    "prefer-promise-reject-errors": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["danger.js"], "optionalDependencies": false, "peerDependencies": false }
+    ]
+  }
 }
