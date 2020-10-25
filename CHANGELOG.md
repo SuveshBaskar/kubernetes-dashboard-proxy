@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/compare/v1.0.1...v1.0.2) (2020-10-25)
+
+
+### Code Refactoring
+
+* added eslint and fixed lint erros ([a04582f](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/commit/a04582f44803bdadfae7db7c1111a48e360c472c))
+
 ### 1.0.1 (2020-10-25)
 
 
