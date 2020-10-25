@@ -1,8 +1,10 @@
 name: Publish to Docker
 on: 
-  release:
-    types: # This configuration does not affect the page_build event above
-      - created
+  # release:
+  #   types: # This configuration does not affect the page_build event above
+  #     - created
+  create:
+    tags:
 jobs:
   push-to-docker:
     runs-on: ubuntu-latest
