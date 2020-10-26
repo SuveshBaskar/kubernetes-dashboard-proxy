@@ -1,6 +1,6 @@
 {
   "name": "kubernetes-dashboard-proxy",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A Nodejs Proxy for Kubernetes Dashboard",
   "repository": {
     "url": "https://github.com/SuveshBaskar/kubernetes-dashboard-proxy.git"

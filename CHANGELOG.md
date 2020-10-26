@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.9](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/compare/v1.0.8...v1.0.9) (2020-10-26)
+
+
+### Bug Fixes
+
+* **package.json:** changed npm start script file ([378be15](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/commit/378be15d6e5c196f4fa913f034aa14a9472e8427))
+
+
+### Others
+
+* updated gitignore ([7cb4c37](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/commit/7cb4c3703474ee86d514aeae6003755b8ba09d22))
+
+
+### Docs
+
+* added sample env file ([dff55c5](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/commit/dff55c5b90ece21ba9a84d9173afe92fb20d961a))
+
 ### [1.0.8](https://github.com/SuveshBaskar/kubernetes-dashboard-proxy/compare/v1.0.7...v1.0.8) (2020-10-25)
 
 
